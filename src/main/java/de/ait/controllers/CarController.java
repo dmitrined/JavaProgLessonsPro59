@@ -18,7 +18,11 @@ public class CarController {
     // Я обернул List.of в ArrayList, чтобы сделать его изменяемым (Mutable).
     private final List<Car> allCars = new ArrayList<>(List.of(
             new Car(1L, "BMW", "X5", 2000, 30000, 35000, "AVAILABLE"),
-            new Car(2L, "Audi", "A4", 2025, 2000, 25000, "SOLD")
+            new Car(2L, "Audi", "A4", 2025, 2000, 25000, "SOLD"),
+            new Car(3L, "BMW", "M3", 2023, 5000, 70000, "AVAILABLE"),
+            new Car(4L, "BMW", "i7", 2024, 100, 120000, "RESERVED"),
+            new Car(5L, "Audi", "Q7", 2021, 45000, 55000, "AVAILABLE"),
+            new Car(6L, "Audi", "RS6", 2022, 15000, 95000, "AVAILABLE")
     ));
 
     @GetMapping//Метод получение всех машин
@@ -28,13 +32,12 @@ public class CarController {
 
     @GetMapping("/{id}")//Получение машины по ID
     public Car getCarById(@PathVariable Long id) {
-        if (id == 1L) {
-            return new Car(1L, "BMW", "X5", 2000, 30000, 35000, "AVAILABLE");
-        } else if (id == 2L) {
-            return new Car(2L, "Audi", "A4", 2025, 2000, 25000, "SOLD");
-        }
-        return null;
+        return allCars.stream()
+                .filter(car -> car.getId().equals(id))
+                .findFirst()
+                .orElse(null);
     }
+
 
     @DeleteMapping("/{id}")//Удаление машины по ID
     public String deleteCar(@PathVariable Long id) {
@@ -47,4 +50,12 @@ public class CarController {
             return "Car with ID " + id + " not found";
         }
     }
+
+    @GetMapping("/brand/{brand}")// Получение машины по brand(дополнительно "/brand/", чтобы не было конфликта с методом "/{id}".)
+    public List<Car> getCarsByBrand(@PathVariable String brand) {
+        return allCars.stream()
+                .filter(car -> car.getBrand().equalsIgnoreCase(brand))
+                .toList();
+    }
+
 }
