@@ -1,0 +1,18 @@
+JPA  как должно быть
+Hibernate реализовывает JPA
+Spring Data JPA слой поверх Hibernate/JPA
+
+Состояние Entity
+Transient обьект создан но Hibernate о нем не знает
+Managed обьект загружен из БД или сохранен в БД
+Detached обьект Managed но контекст закрыт
+Removed обьект помечен на удаление
+
+@Entity помечаем класс как сущность
+@Table задаем имя таблицы
+@Id первичный ключ
+@GeneratedValue --> GenerationType.IDENTITY автоинкремент на стороне БД
+--> SEQUENCE sequences
+--> AUTO --> на усмотрение провайдера
+
+@Column nullable=false lenth=100 unique=true
