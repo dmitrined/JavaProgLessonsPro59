@@ -1,7 +1,7 @@
-package de.ait.repository;
+package de.ait.javaproglessonspro.repository;
 
-import de.ait.enums.CarStatus;
-import de.ait.model.Car;
+import de.ait.javaproglessonspro.enums.CarStatus;
+import de.ait.javaproglessonspro.model.Car;
 import lombok.NonNull;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -15,5 +15,7 @@ public interface CarRepository extends JpaRepository<Car, Long> {
     List<Car> findByStatus(CarStatus status);
 
     boolean existsById(@NonNull Long id);
+
+    List<Car> findByPriceBetween(int min, int max);
 
 }

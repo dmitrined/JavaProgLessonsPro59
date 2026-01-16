@@ -1,8 +1,8 @@
-package de.ait.util;
+package de.ait.javaproglessonspro.util;
 
-import de.ait.enums.CarStatus;
-import de.ait.model.Car;
-import de.ait.repository.CarRepository;
+import de.ait.javaproglessonspro.enums.CarStatus;
+import de.ait.javaproglessonspro.model.Car;
+import de.ait.javaproglessonspro.repository.CarRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package de.ait.enums;
+package de.ait.javaproglessonspro.enums;
 
 public enum CarStatus {
     AVAILABLE, SOLD

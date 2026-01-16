@@ -26,9 +26,9 @@
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running de.ait.JavaProgLessonsPro59ApplicationTests
-09:41:20.088 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [de.ait.JavaProgLessonsPro59ApplicationTests]: JavaProgLessonsPro59ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-09:41:20.133 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration de.ait.JavaProgLessonsPro59Application for test class de.ait.JavaProgLessonsPro59ApplicationTests
+[INFO] Running de.ait.javaproglessonspro.JavaProgLessonsPro59ApplicationTests
+09:41:20.088 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [de.ait.javaproglessonspro.JavaProgLessonsPro59ApplicationTests]: JavaProgLessonsPro59ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:41:20.133 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration de.ait.javaproglessonspro.JavaProgLessonsPro59Application for test class de.ait.javaproglessonspro.JavaProgLessonsPro59ApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -64,7 +64,7 @@
 2026-01-09 09:41:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-01-09 09:41:21 [main] INFO  d.a.JavaProgLessonsPro59ApplicationTests - Started JavaProgLessonsPro59ApplicationTests in 1.039 seconds (process running for 1.43)
 OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.270 s -- in de.ait.JavaProgLessonsPro59ApplicationTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.270 s -- in de.ait.javaproglessonspro.JavaProgLessonsPro59ApplicationTests
 [INFO] 
 [INFO] Results:
 [INFO] 

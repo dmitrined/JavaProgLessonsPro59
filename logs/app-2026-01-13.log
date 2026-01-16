@@ -1,6 +1,6 @@
-2026-01-13 19:22:58 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 30264 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 19:22:58 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 19:22:58 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 19:22:58 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 30264 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 19:22:58 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 19:22:58 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 19:22:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 19:22:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
 2026-01-13 19:22:58 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -29,19 +29,19 @@
 2026-01-13 19:22:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-01-13 19:22:59 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2026-01-13 19:22:59 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-01-13 19:22:59 [main] INFO  de.ait.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.188 seconds (process running for 1.467)
+2026-01-13 19:22:59 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.188 seconds (process running for 1.467)
 2026-01-13 19:26:06 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-01-13 19:26:06 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2026-01-13 19:26:06 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2026-01-13 19:26:06 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String de.ait.controllers.CarController.addCar(de.ait.model.Car)]
+2026-01-13 19:26:06 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String controllers.de.ait.javaproglessonspro.CarController.addCar(model.de.ait.javaproglessonspro.Car)]
 2026-01-13 19:26:16 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2026-01-13 19:26:16 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
 2026-01-13 19:26:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 19:26:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 19:26:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-01-13 19:27:11 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 30329 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 19:27:11 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 19:27:11 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 19:27:11 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 30329 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 19:27:11 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 19:27:11 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 19:27:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 19:27:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
 2026-01-13 19:27:11 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -70,7 +70,7 @@
 2026-01-13 19:27:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-01-13 19:27:12 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2026-01-13 19:27:12 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-01-13 19:27:12 [main] INFO  de.ait.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.111 seconds (process running for 1.316)
+2026-01-13 19:27:12 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.111 seconds (process running for 1.316)
 2026-01-13 19:35:08 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-01-13 19:35:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2026-01-13 19:35:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -80,9 +80,9 @@
 2026-01-13 20:17:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 20:17:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2026-01-13 20:51:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 20:51:22 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31033 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 20:51:22 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 20:51:22 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 20:51:22 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31033 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 20:51:22 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 20:51:22 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 20:51:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 20:51:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
 2026-01-13 20:51:22 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -150,7 +150,7 @@ Syntax error in SQL statement "create table cars (mileage integer not null check
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "create table cars (mileage integer not null check (mileage>=0), price integer not null check (price>=1), [*]year integer not null check (year>=1900), id bigint generated by default as identity, brand varchar(255) not null, model varchar(255) not null, status enum ('AVAILABLE','RESERVED','SOLD'), primary key (id))"; ожидалось "identifier"
 Syntax error in SQL statement "create table cars (mileage integer not null check (mileage>=0), price integer not null check (price>=1), [*]year integer not null check (year>=1900), id bigint generated by default as identity, brand varchar(255) not null, model varchar(255) not null, status enum ('AVAILABLE','RESERVED','SOLD'), primary key (id))"; expected "identifier"; SQL statement:
 create table cars (mileage integer not null check (mileage>=0), price integer not null check (price>=1), year integer not null check (year>=1900), id bigint generated by default as identity, brand varchar(255) not null, model varchar(255) not null, status enum ('AVAILABLE','RESERVED','SOLD'), primary key (id)) [42001-232]
@@ -178,16 +178,16 @@ create table cars (mileage integer not null check (mileage>=0), price integer no
 2026-01-13 20:51:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2026-01-13 20:51:23 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2026-01-13 20:51:23 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-01-13 20:51:23 [main] INFO  de.ait.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.294 seconds (process running for 1.527)
+2026-01-13 20:51:23 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.294 seconds (process running for 1.527)
 2026-01-13 20:52:25 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2026-01-13 20:52:25 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
 2026-01-13 20:52:25 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 20:52:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 20:52:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2026-01-13 21:18:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:18:06 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31313 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:18:06 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:18:06 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:18:06 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31313 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:18:06 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:18:06 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:18:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:18:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
 2026-01-13 21:18:06 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -255,7 +255,7 @@ Syntax error in SQL statement "create table cars (mileage integer not null check
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "create table cars (mileage integer not null check (mileage>=0), price integer not null check (price>=1), [*]year integer not null check (year>=1900), id bigint generated by default as identity, brand varchar(255) not null, model varchar(255) not null, status enum ('AVAILABLE','RESERVED','SOLD'), primary key (id))"; ожидалось "identifier"
 Syntax error in SQL statement "create table cars (mileage integer not null check (mileage>=0), price integer not null check (price>=1), [*]year integer not null check (year>=1900), id bigint generated by default as identity, brand varchar(255) not null, model varchar(255) not null, status enum ('AVAILABLE','RESERVED','SOLD'), primary key (id))"; expected "identifier"; SQL statement:
 create table cars (mileage integer not null check (mileage>=0), price integer not null check (price>=1), year integer not null check (year>=1900), id bigint generated by default as identity, brand varchar(255) not null, model varchar(255) not null, status enum ('AVAILABLE','RESERVED','SOLD'), primary key (id)) [42001-232]
@@ -280,7 +280,7 @@ create table cars (mileage integer not null check (mileage>=0), price integer no
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 39 common frames omitted
 2026-01-13 21:18:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-13 21:18:07 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+2026-01-13 21:18:07 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 2026-01-13 21:18:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 21:18:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 21:18:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
@@ -289,7 +289,7 @@ create table cars (mileage integer not null check (mileage>=0), price integer no
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2026-01-13 21:18:07 [main] ERROR o.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
@@ -311,8 +311,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -325,7 +325,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 21 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
@@ -341,7 +341,7 @@ Caused by: org.springframework.data.repository.query.QueryCreationException: Cou
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 31 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:260)
@@ -384,9 +384,9 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
 	... 47 common frames omitted
 2026-01-13 21:27:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:27:53 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31496 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:27:53 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:27:53 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:27:53 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31496 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:27:53 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:27:53 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:27:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:27:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
 2026-01-13 21:27:53 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -474,7 +474,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint generated by default as identity,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; ожидалось "identifier"
 Syntax error in SQL statement "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint generated by default as identity,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
 
@@ -509,7 +509,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 39 common frames omitted
 2026-01-13 21:27:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-13 21:27:54 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+2026-01-13 21:27:54 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 2026-01-13 21:27:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 21:27:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 21:27:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
@@ -518,7 +518,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2026-01-13 21:27:54 [main] ERROR o.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
@@ -540,8 +540,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -554,7 +554,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 21 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
@@ -570,7 +570,7 @@ Caused by: org.springframework.data.repository.query.QueryCreationException: Cou
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 31 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:260)
@@ -613,9 +613,9 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
 	... 47 common frames omitted
 2026-01-13 21:29:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:29:04 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31517 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:29:04 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:29:04 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:29:04 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31517 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:29:04 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:29:04 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:29:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:29:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
 2026-01-13 21:29:05 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -703,7 +703,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint generated by default as identity,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; ожидалось "identifier"
 Syntax error in SQL statement "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint generated by default as identity,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
 
@@ -738,7 +738,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 39 common frames omitted
 2026-01-13 21:29:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-13 21:29:05 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+2026-01-13 21:29:05 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 2026-01-13 21:29:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 21:29:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 21:29:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
@@ -747,7 +747,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2026-01-13 21:29:05 [main] ERROR o.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
@@ -769,8 +769,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -783,7 +783,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 21 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
@@ -799,7 +799,7 @@ Caused by: org.springframework.data.repository.query.QueryCreationException: Cou
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 31 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:260)
@@ -842,9 +842,9 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
 	... 47 common frames omitted
 2026-01-13 21:29:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:29:57 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31534 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:29:57 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:29:57 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:29:57 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31534 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:29:57 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:29:57 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:29:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:29:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
 2026-01-13 21:29:57 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -932,7 +932,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint not null,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; ожидалось "identifier"
 Syntax error in SQL statement "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint not null,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
 
@@ -967,7 +967,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 39 common frames omitted
 2026-01-13 21:29:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-13 21:29:58 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+2026-01-13 21:29:58 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 2026-01-13 21:29:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 21:29:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 21:29:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
@@ -976,7 +976,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2026-01-13 21:29:58 [main] ERROR o.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
@@ -998,8 +998,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -1012,7 +1012,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 21 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
@@ -1028,7 +1028,7 @@ Caused by: org.springframework.data.repository.query.QueryCreationException: Cou
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 31 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:260)
@@ -1071,9 +1071,9 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
 	... 47 common frames omitted
 2026-01-13 21:30:37 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:30:37 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31552 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:30:37 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:30:37 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:30:37 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31552 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:30:37 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:30:37 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:30:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:30:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
 2026-01-13 21:30:37 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -1161,7 +1161,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint not null,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; ожидалось "identifier"
 Syntax error in SQL statement "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint not null,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
 
@@ -1196,7 +1196,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
 	... 39 common frames omitted
 2026-01-13 21:30:38 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-01-13 21:30:38 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+2026-01-13 21:30:38 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 2026-01-13 21:30:38 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 21:30:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 21:30:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
@@ -1205,7 +1205,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2026-01-13 21:30:38 [main] ERROR o.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carController' defined in file [/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes/de/ait/controllers/CarController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
@@ -1227,8 +1227,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in de.ait.repository.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carRepository' defined in repository.de.ait.javaproglessonspro.CarRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
@@ -1241,7 +1241,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 21 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); Reason: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
 	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
@@ -1257,7 +1257,7 @@ Caused by: org.springframework.data.repository.query.QueryCreationException: Cou
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
 	... 31 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean de.ait.repository.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean repository.de.ait.javaproglessonspro.CarRepository.existsBiId(java.lang.Long); No property 'existsBiId' found for type 'Car'
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:260)
@@ -1300,9 +1300,9 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
 	... 47 common frames omitted
 2026-01-13 21:32:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:32:21 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31572 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:32:21 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:32:21 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:32:21 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31572 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:32:21 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:32:21 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:32:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:32:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interface.
 2026-01-13 21:32:22 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -1390,7 +1390,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at de.ait.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
+	at de.ait.javaproglessonspro.JavaProgLessonsPro59Application.main(JavaProgLessonsPro59Application.java:10)
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint not null,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; ожидалось "identifier"
 Syntax error in SQL statement "\000a    create table cars (\000a        mileage integer not null check (mileage>=0),\000a        price integer not null check (price>=1),\000a        [*]year integer not null check (year>=1900),\000a        id bigint not null,\000a        brand varchar(255) not null,\000a        model varchar(255) not null,\000a        status enum ('AVAILABLE','SOLD'),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
 
@@ -1429,16 +1429,16 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 2026-01-13 21:32:23 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDb'
 2026-01-13 21:32:23 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2026-01-13 21:32:23 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-01-13 21:32:23 [main] INFO  de.ait.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.793 seconds (process running for 2.056)
+2026-01-13 21:32:23 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.793 seconds (process running for 2.056)
 2026-01-13 21:34:51 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2026-01-13 21:34:51 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
 2026-01-13 21:34:51 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-01-13 21:34:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 21:34:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2026-01-13 21:34:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:34:54 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31627 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:34:54 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:34:54 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:34:54 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31627 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:34:54 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:34:54 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:34:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:34:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
 2026-01-13 21:34:55 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -1468,7 +1468,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 2026-01-13 21:34:56 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDb'
 2026-01-13 21:34:56 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2026-01-13 21:34:56 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-01-13 21:34:56 [main] INFO  de.ait.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.387 seconds (process running for 1.605)
+2026-01-13 21:34:56 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.387 seconds (process running for 1.605)
 2026-01-13 21:36:17 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-01-13 21:36:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2026-01-13 21:36:17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -1478,9 +1478,9 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 2026-01-13 21:41:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-01-13 21:41:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 2026-01-13 21:48:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
-2026-01-13 21:48:38 [main] INFO  de.ait.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31896 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
-2026-01-13 21:48:38 [main] DEBUG de.ait.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
-2026-01-13 21:48:38 [main] INFO  de.ait.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-13 21:48:38 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 31896 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-13 21:48:38 [main] DEBUG de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-13 21:48:38 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
 2026-01-13 21:48:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-01-13 21:48:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
 2026-01-13 21:48:39 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
@@ -1510,7 +1510,7 @@ Syntax error in SQL statement "\000a    create table cars (\000a        mileage 
 2026-01-13 21:48:39 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDb'
 2026-01-13 21:48:39 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
 2026-01-13 21:48:39 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-01-13 21:48:39 [main] INFO  de.ait.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.346 seconds (process running for 1.553)
+2026-01-13 21:48:39 [main] INFO  de.ait.javaproglessonspro.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.346 seconds (process running for 1.553)
 2026-01-13 21:51:44 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2026-01-13 21:51:44 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
 2026-01-13 21:51:44 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
