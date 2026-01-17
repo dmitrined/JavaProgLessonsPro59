@@ -1,7 +1,9 @@
 package de.ait.javaproglessonspro.controllers;
 
 
+import de.ait.javaproglessonspro.enums.Transmission;
 import de.ait.javaproglessonspro.model.Car;
+import de.ait.javaproglessonspro.enums.FuelType;
 import de.ait.javaproglessonspro.repository.CarRepository;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -25,7 +27,7 @@ public class CarController {
     public CarController(CarRepository carRepository) {
         this.carRepository = carRepository;
     }
-
+    @Operation(summary = "Get welcome message")
     @GetMapping("/info")
     public ResponseEntity<String> getInfo() {
         return ResponseEntity.ok("Welcome to the " + dealershipName + " car dealership!");
@@ -36,7 +38,7 @@ public class CarController {
     public ResponseEntity<List<Car>> getAllCars() {
         return ResponseEntity.ok(carRepository.findAll());
     }
-
+    @Operation(summary = "Get car by id")
     @GetMapping("/{id}")
     public ResponseEntity<Car> getCarById(@PathVariable Long id) {
         return carRepository.findById(id)
@@ -56,6 +58,7 @@ public class CarController {
 
 
     //api/cars/search?brand=BMW
+    @Operation(summary = "Search cars by brand")
     @GetMapping("/search")
     public ResponseEntity<List<Car>> searchCars(@RequestParam String brand) {
         return ResponseEntity.ok(carRepository.findByBrand(brand));
@@ -80,6 +83,10 @@ public class CarController {
                     carToUpdate.setMileage(car.getMileage());
                     carToUpdate.setPrice(car.getPrice());
                     carToUpdate.setStatus(car.getStatus());
+                    carToUpdate.setColor(car.getColor());
+                    carToUpdate.setHorsepower(car.getHorsepower());
+                    carToUpdate.setFuelType(car.getFuelType());
+                    carToUpdate.setTransmission(car.getTransmission());
                     carRepository.save(carToUpdate);
                     return ResponseEntity.ok("updated car with id = " + id);
                 })
@@ -87,10 +94,33 @@ public class CarController {
     }
 
     // GET /api/cars/by-price?min=10000&max=20000
+    @Operation(summary = "Search cars by price range")
     @GetMapping("/by-price")
     public ResponseEntity<List<Car>> searchByPriceBetween(
             @RequestParam int min, @RequestParam int max
     ) {
         return ResponseEntity.ok(carRepository.findByPriceBetween(min, max));
+    }
+    @Operation(summary = "Search cars by color")
+    @GetMapping("/by-color")
+    public ResponseEntity<List<Car>> getCarsByColor(@RequestParam String color) {
+        return ResponseEntity.ok(carRepository.findByColorIgnoreCase(color));
+    }
+    @Operation(summary = "Search cars by fuel type")
+    @GetMapping("/by-fuel")
+    public ResponseEntity<List<Car>> getCarsByFuel(@RequestParam FuelType fuelType) {
+        return ResponseEntity.ok(carRepository.findByFuelType(fuelType));
+    }
+    @Operation(summary = "Search cars by horsepower range")
+    @GetMapping("/by-power")
+    public ResponseEntity<List<Car>> getCarsByPowerRange(
+            @RequestParam int minHp, @RequestParam int maxHp
+    ) {
+        return ResponseEntity.ok(carRepository.findByHorsepowerBetween(minHp, maxHp));
+    }
+    @Operation(summary = "Search cars by transmission")
+    @GetMapping("/by-transmission")
+    public ResponseEntity<List<Car>> getCarsByTransmission(@RequestParam Transmission transmission){
+        return ResponseEntity.ok(carRepository.findCarByTransmission(transmission));
     }
 }

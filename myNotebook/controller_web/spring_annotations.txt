@@ -1,0 +1,28 @@
+5) Аннотации контроллеров Spring Boot (главное)
+
+5.1 @RestController
+- `@RestController` = `@Controller` + `@ResponseBody`.
+- Сообщает Spring, что данный класс является контроллером, где каждый метод возвращает объект прямо в тело HTTP-ответа (в формате JSON), а не ищет HTML-шаблон.
+
+5.2 @RequestMapping и сокращения
+- `@RequestMapping("/api/cars")` — устанавливает базовый префикс пути для всех методов внутри контроллера.
+- Сокращенные аннотации для методов (Shortcut Annotations):
+  - `@GetMapping` — получение данных (READ).
+  - `@PostMapping` — создание данных (CREATE).
+  - `@PutMapping` — полное обновление (UPDATE).
+  - `@PatchMapping` — частичное обновление.
+  - `@DeleteMapping` — удаление (DELETE).
+
+5.3 Как принимать данные из запроса
+- `@PathVariable` — извлекает значения из переменной части URL-пути (например, `/api/cars/{id}`). Обязателен для идентификации конкретного ресурса.
+- `@RequestParam` — извлекает параметры из Query String (после знака `?`, например, `?brand=BMW&year=2020`). Часто используется для фильтрации, сортировки и пагинации.
+- `@RequestBody` — десериализует тело запроса (обычно JSON) в Java-объект. Применяется в POST, PUT, PATCH.
+- `@RequestHeader` — позволяет получить доступ к HTTP-заголовкам (например, `User-Agent` или `Authorization`).
+
+5.4 Ответы контроллера
+- **Автоматический JSON**: Если метод возвращает POJO или List, Spring автоматически конвертирует их в JSON и отправляет со статусом 200 OK.
+- **ResponseEntity<T>**: Специальный оберточный класс, который дает полный контроль над HTTP-ответом:
+  - `ResponseEntity.ok(body)` -> 200 OK.
+  - `ResponseEntity.status(201).body(saved)` -> 201 Created.
+  - `ResponseEntity.notFound().build()` -> 404 Not Found.
+  - Позволяет также добавлять кастомные заголовки (Headers).

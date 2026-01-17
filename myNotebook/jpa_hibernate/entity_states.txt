@@ -1,0 +1,20 @@
+1.4 Состояния Entity (4 состояния)
+
+1. Transient
+- объект создан через `new`,
+- не связан с Hibernate (Persistence Context),
+- в БД его нет.
+
+2. Managed / Persistent
+- объект загружен из БД или сохранён,
+- находится в persistence context,
+- Hibernate отслеживает изменения и автоматически синхронизирует их с БД при flush/commit.
+
+3. Detached
+- объект был managed,
+- но persistence context закрыт (например, вышли из транзакции).
+- Попытка доступа к lazy-связям вызовет LazyInitializationException.
+
+4. Removed
+- объект помечен на удаление,
+- физически удалится при commit транзакции.

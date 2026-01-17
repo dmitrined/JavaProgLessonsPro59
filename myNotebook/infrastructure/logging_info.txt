@@ -1,0 +1,47 @@
+### Логирование в Spring Boot (SLF4J + Logback)
+
+Логирование — это процесс записи информации о работе приложения в файлы или консоль. Оно помогает отлаживать ошибки и мониторить состояние системы.
+
+#### 1. Уровни логирования (Hierarchy)
+Уровни определяют важность сообщения. Если установлен уровень INFO, то сообщения DEBUG и TRACE будут игнорироваться.
+
+1. **TRACE** — сверхдетально, записывается каждый мелкий шаг алгоритма.
+2. **DEBUG** — информация для отладки, полезная разработчикам.
+3. **INFO** — сообщения о нормальной работе приложения (старт сервиса, получение запроса).
+4. **WARN** — предупреждение о подозрительной ситуации, которая не является ошибкой, но требует внимания.
+5. **ERROR** — ошибка, при которой выполнение операции прервалось.
+
+**Порядок приоритета:**
+`TRACE < DEBUG < INFO < WARN < ERROR`
+
+#### 2. Настройка в Spring Boot
+По умолчанию Spring Boot логирует в консоль на уровне INFO.
+Настройки можно изменить в `application.properties`:
+```properties
+logging.level.root=INFO
+logging.level.de.ait.javaproglessonspro=DEBUG
+logging.file.name=logs/app.log
+```
+
+#### 3. Logback
+Spring Boot по умолчанию использует **Logback** в качестве реализации логирования через фасад **SLF4J**. Конфигурация обычно находится в файле `src/main/resources/logback-spring.xml`.
+
+#### 4. Как использовать в коде
+С помощью аннотации Lombok `@Slf4j` или вручную:
+```java
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class MyService {
+    private static final Logger log = LoggerFactory.getLogger(MyService.class);
+    
+    public void doWork() {
+        log.info("Starting work...");
+        try {
+            // logic
+        } catch (Exception e) {
+            log.error("Error occurred: {}", e.getMessage());
+        }
+    }
+}
+```

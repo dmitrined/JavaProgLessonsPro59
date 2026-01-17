@@ -3,6 +3,8 @@ package de.ait.javaproglessonspro.controllers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.ait.javaproglessonspro.enums.CarStatus;
 import de.ait.javaproglessonspro.model.Car;
+import de.ait.javaproglessonspro.enums.FuelType;
+import de.ait.javaproglessonspro.enums.Transmission;
 import de.ait.javaproglessonspro.repository.CarRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -43,6 +45,10 @@ class CarControllerIT {
         car.setMileage(30000);
         car.setPrice(30000);
         car.setStatus(CarStatus.AVAILABLE);
+        car.setColor("Black");
+        car.setHorsepower(200);
+        car.setFuelType(FuelType.PETROL);
+        car.setTransmission(Transmission.AUTOMATIC);
         return car;
     }
 
@@ -112,5 +118,69 @@ class CarControllerIT {
         mockMvc.perform(get("/api/cars"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(2)));
+    }
+
+    @Test
+    @DisplayName("GET /api/cars/by-color should return cars by color")
+    void testGetCarsByColor() throws Exception {
+        Car blackCar = buildValidCar("BMW", "X5");
+        blackCar.setColor("Black");
+        carRepository.save(blackCar);
+
+        Car whiteCar = buildValidCar("Audi", "A4");
+        whiteCar.setColor("White");
+        carRepository.save(whiteCar);
+
+        mockMvc.perform(get("/api/cars/by-color").param("color", "black"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(1)))
+                .andExpect(jsonPath("$[0].color", is("Black")));
+    }
+
+    @Test
+    @DisplayName("GET /api/cars/by-fuel should return cars by fuel type")
+    void testGetCarsByFuel() throws Exception {
+        Car dieselCar = buildValidCar("BMW", "X5");
+        dieselCar.setFuelType(FuelType.DIESEL);
+        carRepository.save(dieselCar);
+
+        Car petrolCar = buildValidCar("Audi", "A4");
+        petrolCar.setFuelType(FuelType.PETROL);
+        carRepository.save(petrolCar);
+
+        mockMvc.perform(get("/api/cars/by-fuel").param("fuelType", "DIESEL"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(1)))
+                .andExpect(jsonPath("$[0].fuelType", is("DIESEL")));
+    }
+
+    @Test
+    @DisplayName("GET /api/cars/by-fuel should return 400 for invalid fuel type")
+    void testGetCarsByFuelInvalid() throws Exception {
+        mockMvc.perform(get("/api/cars/by-fuel").param("fuelType", "GHOST_FUEL"))
+                .andExpect(status().isBadRequest());
+    }
+
+    @Test
+    @DisplayName("GET /api/cars/by-power should return cars by horsepower range")
+    void testGetCarsByPower() throws Exception {
+        Car car1 = buildValidCar("BMW", "X5");
+        car1.setHorsepower(100);
+        carRepository.save(car1);
+
+        Car car2 = buildValidCar("Audi", "A4");
+        car2.setHorsepower(200);
+        carRepository.save(car2);
+
+        Car car3 = buildValidCar("Tesla", "Model S");
+        car3.setHorsepower(500);
+        carRepository.save(car3);
+
+        mockMvc.perform(get("/api/cars/by-power")
+                        .param("minHp", "150")
+                        .param("maxHp", "300"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$", hasSize(1)))
+                .andExpect(jsonPath("$[0].brand", is("Audi")));
     }
 }
