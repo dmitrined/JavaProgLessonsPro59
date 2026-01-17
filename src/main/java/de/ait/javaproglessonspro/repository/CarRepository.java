@@ -12,7 +12,7 @@ import java.util.List;
 public interface CarRepository extends JpaRepository<Car, Long> {
 
     //SELECT * FROM CARS WHERE brand = ?
-    List<Car> findByBrand(String brand);
+    List<Car> findByBrandIgnoreCase(String brand);
 
     List<Car> findByStatus(CarStatus status);
 

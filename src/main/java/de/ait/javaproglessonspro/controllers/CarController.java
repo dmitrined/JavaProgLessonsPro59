@@ -61,7 +61,7 @@ public class CarController {
     @Operation(summary = "Search cars by brand")
     @GetMapping("/search")
     public ResponseEntity<List<Car>> searchCars(@RequestParam String brand) {
-        return ResponseEntity.ok(carRepository.findByBrand(brand));
+        return ResponseEntity.ok(carRepository.findByBrandIgnoreCase(brand));
     }
 
 
