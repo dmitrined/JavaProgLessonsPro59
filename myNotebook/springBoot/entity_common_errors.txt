@@ -3,5 +3,5 @@
 - Использовать Entity как DTO: допустимо в обучении, плохо в продакшене.
 - equals / hashCode по id: id появляется только после сохранения, опасно для коллекций.
 - LazyInitializationException: доступ к lazy-связям вне транзакции.
-- Циклические JSON-ссылки: User → Orders → User...
+- Циклические JSON-ссылки: User → Orders → User → Orders ...
   Решения: DTO, @JsonIgnore, правильная архитектура.

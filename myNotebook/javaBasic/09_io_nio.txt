@@ -1,0 +1,61 @@
+### Ввод-вывод (I/O и NIO)
+
+Java предоставляет мощные средства для работы с вводом и выводом данных (файлы, сеть, консоль).
+
+#### 1. Java IO (java.io) - Потоковый ввод-вывод
+Основан на концепции потоков (Streams). Работает синхронно (блокирующий I/O).
+
+**Байтовые потоки (для бинарных данных):**
+*   `InputStream` (чтение) и `OutputStream` (запись).
+*   Реализации: `FileInputStream`, `FileOutputStream`, `BufferedInputStream`.
+
+**Символьные потоки (для текста):**
+*   `Reader` (чтение) и `Writer` (запись).
+*   Реализации: `FileReader`, `FileWriter`, `BufferedReader`, `PrintWriter`.
+*   Автоматически обрабатывают кодировки.
+
+**Пример чтения файла (try-with-resources):**
+```java
+try (BufferedReader br = new BufferedReader(new FileReader("text.txt"))) {
+    String line;
+    while ((line = br.readLine()) != null) {
+        System.out.println(line);
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
+**Сериализация:**
+Процесс сохранения состояния объекта в байтовый поток.
+*   Интерфейс `Serializable` (маркерный).
+*   Ключевое слово `transient` — исключает поле из сериализации.
+*   Классы: `ObjectOutputStream`, `ObjectInputStream`.
+
+#### 2. Java NIO (java.nio) - New I/O
+Введен в Java 1.4 (и обновлен в Java 7 - NIO.2). Обеспечивает более высокую производительность и неблокирующий ввод-вывод.
+
+**Основные компоненты:**
+1.  **Buffers (Буферы):** Контейнеры для данных (например, `ByteBuffer`). Данные читаются в буфер и пишутся из буфера.
+2.  **Channels (Каналы):** Двусторонние каналы связи (аналог потоков, но могут читать и писать). `FileChannel`, `SocketChannel`.
+3.  **Selectors (Селекторы):** Позволяют одному потоку обрабатывать несколько каналов (Multiplexing). Ключевая особенность для высоконагруженных серверов.
+
+**NIO.2 (java.nio.file):**
+Современный API для работы с файловой системой.
+*   `Path`: интерфейс, представляющий путь к файлу (замена `File`).
+*   `Paths`: утилитный класс для создания путей.
+*   `Files`: статические методы для операций с файлами.
+
+**Примеры NIO.2:**
+```java
+Path path = Paths.get("data.txt");
+
+// Проверка существования
+boolean exists = Files.exists(path);
+
+// Чтение всех строк
+List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+
+// Копирование
+Files.copy(path, Paths.get("backup.txt"), StandardCopyOption.REPLACE_EXISTING);
+```

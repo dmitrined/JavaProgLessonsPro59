@@ -1,0 +1,32 @@
+2. Repository в Spring Data JPA
+
+2.1 Что такое Repository
+Repository — компонент слоя доступа к данным (DAO), который:
+- выполняет CRUD,
+- формирует запросы к БД,
+- скрывает SQL и JPA API.
+
+Spring Data JPA генерирует реализацию автоматически по интерфейсу:
+public interface UserRepository extends JpaRepository<User, Long> {
+}
+
+2.2 Иерархия репозиториев
+Repository
+ └── CrudRepository
+     └── PagingAndSortingRepository
+         └── JpaRepository
+
+- Repository: маркерный интерфейс, почти не используется напрямую.
+- CrudRepository: основные методы (save, findById, findAll, delete).
+- PagingAndSortingRepository: поддержка Pageable и Sort.
+- JpaRepository: всё выше + flush, batch-операции, специфика JPA.
+
+Практическое правило:
+В 90% проектов используют JpaRepository.
+
+2.3 Query Methods (Запросы по имени метода)
+Spring Data умеет генерировать SQL-запросы на основе имен методов интерфейса:
+- List<Car> findByBrand(String brand);
+- List<Car> findByPriceBetween(int min, int max);
+- List<Car> findByColorIgnoreCase(String color);
+- long countByStatus(CarStatus status);

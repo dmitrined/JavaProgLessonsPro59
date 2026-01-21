@@ -1,17 +1,20 @@
 package de.ait.javaproglessonspro.model;
 
+
 import de.ait.javaproglessonspro.enums.CarStatus;
 import de.ait.javaproglessonspro.enums.FuelType;
 import de.ait.javaproglessonspro.enums.Transmission;
-import jakarta.persistence.*;
-import lombok.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.springframework.beans.factory.annotation.Value;
 
 @Entity
 @Table(name = "cars")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -40,21 +43,35 @@ public class Car {
     private int price;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private CarStatus status;
 
-    private String color;
-
-    @Min(value = 1, message = "Horsepower must be greater than 0")
-    private int horsepower;
-
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private FuelType fuelType;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Transmission transmission;
 
+    @Column(nullable = false)
+    @NotBlank(message = "Color must not be empty")
+    private String color;
 
-    public Car(String brand, String model, int productionYear, int mileage, int price, CarStatus status, String color, int horsepower, FuelType fuelType, Transmission transmission) {
+    @Column(nullable = false)
+    @Min(value = 1, message = "Horsepower must be greater than 0")
+    private int horsepower;
+
+
+    public Car(String brand, String model,
+               int productionYear,
+               int mileage,
+               int price,
+               CarStatus status,
+               String color,
+               int horsepower,
+               FuelType fuelType,
+               Transmission transmission) {
         this.brand = brand;
         this.model = model;
         this.productionYear = productionYear;

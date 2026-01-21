@@ -1,0 +1,48 @@
+### Обработка исключений (Exceptions)
+
+Исключение (Exception) — это проблема, возникающая во время выполнения программы, которая прерывает нормальный поток инструкций.
+
+#### Иерархия Throwable
+Все исключения наследуются от класса `java.lang.Throwable`.
+1.  **Error:** Серьезные проблемы уровня JVM (например, `OutOfMemoryError`, `StackOverflowError`). Приложение обычно не может их восстановить, ловить их не рекомендуется.
+2.  **Exception:** Ошибки, которые программа может и должна обрабатывать.
+
+#### Типы исключений (Exception):
+1.  **Checked (Проверяемые):**
+    *   Наследуются от `Exception` (но не `RuntimeException`).
+    *   Компилятор **требует** их обработки (`try-catch` или `throws`).
+    *   Примеры: `IOException`, `SQLException`, `ClassNotFoundException`.
+    *   Обычно представляют внешние ошибки, не зависящие от программиста (файл не найден, сеть недоступна).
+
+2.  **Unchecked (Непроверяемые):**
+    *   Наследуются от `RuntimeException`.
+    *   Компилятор не требует их обработки.
+    *   Примеры: `NullPointerException`, `ArrayIndexOutOfBoundsException`, `ArithmeticException`.
+    *   Обычно указывают на ошибки в логике программы.
+
+#### Ключевые слова:
+*   `try`: блок кода, где может возникнуть исключение.
+*   `catch`: блок, перехватывающий и обрабатывающий исключение.
+*   `finally`: блок, который выполняется **всегда** (было исключение или нет). Используется для освобождения ресурсов.
+*   `throw`: используется для явного выброса исключения.
+*   `throws`: указывается в сигнатуре метода, предупреждая, что метод может выбросить исключение.
+
+#### Try-with-resources (Java 7+)
+Автоматически закрывает ресурсы, реализующие интерфейс `AutoCloseable` (например, потоки ввода-вывода, соединения с БД).
+```java
+try (BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+    return br.readLine();
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
+#### Создание собственных исключений
+Можно создавать свои классы исключений, наследуясь от `Exception` или `RuntimeException`.
+```java
+public class InsufficientFundsException extends Exception {
+    public InsufficientFundsException(String message) {
+        super(message);
+    }
+}
+```

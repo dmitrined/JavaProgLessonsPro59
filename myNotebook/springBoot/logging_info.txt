@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
 
 public class MyService {
     private static final Logger log = LoggerFactory.getLogger(MyService.class);
-    
+
     public void doWork() {
         log.info("Starting work...");
         try {
