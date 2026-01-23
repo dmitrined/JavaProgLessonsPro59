@@ -8,7 +8,8 @@ import de.ait.javaproglessonspro.validation.CarValidator;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -20,18 +21,17 @@ import java.util.List;
 @Tag(name = "Car management API")
 @RestController
 @RequestMapping("/api/cars")
-@Slf4j
 public class CarController {
 
+    private static final Logger log = LoggerFactory.getLogger(CarController.class);
+
     private final CarRepository carRepository;
-    private final CarValidator carValidator;
 
     @Value("${app.dealership.name:Welcome to AIT Gr.59 API}")
     private String dealershipName;
 
-    public CarController(CarRepository carRepository, CarValidator carValidator) {
+    public CarController(CarRepository carRepository) {
         this.carRepository = carRepository;
-        this.carValidator = carValidator;
     }
 
     @GetMapping("/info")
@@ -77,25 +77,21 @@ public class CarController {
 
     @Operation(summary = "Add a new car")
     @PostMapping
-    public ResponseEntity<Long> addCar(@RequestBody Car car) {
-        if (!carValidator.isValid(car)) {
-            return ResponseEntity.badRequest().build();
+    public ResponseEntity<List<String>> addCar(@RequestBody  Car car) {
+        CarValidator carValidator = new CarValidator();
+        List<String> errors = carValidator.validateWithErrors(car);
+        if(!errors.isEmpty()) {
+            return ResponseEntity.badRequest().body(errors);
         }
+
         Car savedCar = carRepository.save(car);
-        if (savedCar == null) {
-            log.error("Car could not be saved");
-            return ResponseEntity.badRequest().build();
-        }
         log.info("Car with id {} saved", savedCar.getId());
-        return new ResponseEntity(HttpStatusCode.valueOf(201));
+        return new ResponseEntity<>(HttpStatusCode.valueOf(201));
     }
 
     @Operation(summary = "Update one car by id")
     @PutMapping("/{id}")
     public ResponseEntity updateCar(@PathVariable Long id, @RequestBody Car car) {
-        if (!carValidator.isValid(car)) {
-            return ResponseEntity.badRequest().build();
-        }
         if (carRepository.existsById(id)) {
             Car carToUpdate = carRepository.findById(id).orElse(null);
             carToUpdate.setBrand(car.getBrand());
@@ -104,10 +100,6 @@ public class CarController {
             carToUpdate.setMileage(car.getMileage());
             carToUpdate.setPrice(car.getPrice());
             carToUpdate.setStatus(car.getStatus());
-            carToUpdate.setColor(car.getColor());
-            carToUpdate.setHorsepower(car.getHorsepower());
-            carToUpdate.setFuelType(car.getFuelType());
-            carToUpdate.setTransmission(car.getTransmission());
             carRepository.save(carToUpdate);
             log.info("Car with id {} updated", id);
             return ResponseEntity.ok("updated car with id = " + id);
@@ -126,32 +118,31 @@ public class CarController {
 
     // GET /api/cars/by-color?color=black
 
-    @Operation(summary = "Search cars by color",
+    @Operation(
+            summary = "Search cars by color",
             description = "Returns a list of cars with the specified color (case-insensitive). " +
                     "Available colors include Black, White, Silver, Blue, Red, Gray, etc. " +
-                    "Example: /api/cars/by-color?color=black")
+                    "Example: /api/cars/by-color?color=black"
+    )
     @GetMapping("/by-color")
     public ResponseEntity<List<Car>> getCarByColor(@RequestParam String color) {
-        List<Car> cars = carRepository.findByColorIgnoreCase(color);
-        if (cars.isEmpty()) {
+        if (!carRepository.existsByColorIgnoreCase(color)) {
             log.warn("Color {} not found", color);
             return ResponseEntity.notFound().build();
         }
         log.info("Color {} found", color);
-        return ResponseEntity.ok(cars);
+        return ResponseEntity.ok(carRepository.findByColorIgnoreCase(color));
     }
 
-    @Operation(summary = "Search cars by fuel type",
+    @Operation(
+            summary = "Search cars by fuel type",
             description = "Returns a list of cars with the specified fuel type. " +
                     "Available fuel types: PETROL, DIESEL, ELECTRIC, HYBRID. " +
-                    "Example: /api/cars/by-fuel?fuelType=DIESEL")
+                    "Example: /api/cars/by-fuel?fuelType=DIESEL"
+    )
     @GetMapping("/by-fuel")
     public ResponseEntity<List<Car>> getCarByFuelType(@RequestParam FuelType fuelType) {
-        List<Car> cars = carRepository.findByFuelType(fuelType);
-        if (cars.isEmpty()) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(cars);
+        return ResponseEntity.ok(carRepository.findByFuelType(fuelType));
     }
 
     // GET /api/cars/by-power?minHp=150&maxHp=300
@@ -172,5 +163,7 @@ public class CarController {
 
         return ResponseEntity.ok(cars);
     }
+
+
 
 }

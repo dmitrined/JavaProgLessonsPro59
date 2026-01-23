@@ -1,0 +1,26 @@
+### Содержание (Java Basic)
+
+Данный раздел содержит конспекты по основным темам языка Java. Используйте горячую клавишу `⌘Shift+O` в IntelliJ IDEA для быстрого перехода к нужному файлу.
+
+#### 📂 Список тем:
+
+1.  **[01_intro_and_types.txt](01_intro_and_types.txt)** — Введение, JVM/JRE/JDK, примитивные и ссылочные типы.
+2.  **[02_control_flow.txt](02_control_flow.txt)** — Управляющие конструкции: if-else, switch, циклы (for, while, for-each).
+3.  **[03_oop_principles.txt](03_oop_principles.txt)** — Основы ООП: инкапсуляция, наследование, полиморфизм, абстракция.
+4.  **[04_strings.txt](04_strings.txt)** — Класс String, StringBuilder, StringBuffer, форматирование.
+5.  **[05_collections.txt](05_collections.txt)** — Обзор Collections Framework, иерархия интерфейсов.
+6.  **[06_exceptions.txt](06_exceptions.txt)** — Обработка исключений: try-catch-finally, checked/unchecked.
+7.  **[07_streams_lambda.txt](07_streams_lambda.txt)** — Функциональные интерфейсы, Stream API, Optional.
+8.  **[08_multithreading.txt](08_multithreading.txt)** — Многопоточность: создание потоков, синхронизация, Concurrency API.
+9.  **[09_io_nio.txt](09_io_nio.txt)** — Ввод-вывод: Streams (IO) и Channels/Buffers (NIO).
+10. **[10_enums.txt](10_enums.txt)** — Перечисления (Enum): методы, поля, расширенное поведение.
+11. **[11_maps.txt](11_maps.txt)** — Интерфейс Map и его реализации (HashMap, TreeMap и др.).
+12. **[12_hotkeys.txt](12_hotkeys.txt)** — Горячие клавиши для IntelliJ IDEA и MacOS.
+13. **[13_set.txt](13_set.txt)** — Интерфейс Set: HashSet, TreeSet, LinkedHashSet.
+14. **[14_list.txt](14_list.txt)** — Интерфейс List: ArrayList, LinkedList.
+15. **[15_generics.txt](15_generics.txt)** — Обобщения (Generics): Wildcards, PECS, Type Erasure.
+16. **[16_annotations_reflection.txt](16_annotations_reflection.txt)** — Метаданные и работа со структурой кода в Runtime.
+17. **[17_modern_java.txt](17_modern_java.txt)** — Новые возможности: Records, Sealed Classes, Pattern Matching.
+
+---
+💡 **Совет:** Для поиска информации внутри файлов используйте `⌘F` (в файле) или `⌘Shift+F` (по всему проекту).

@@ -1,23 +1,15 @@
 package de.ait.javaproglessonspro.model;
 
-
 import de.ait.javaproglessonspro.enums.CarStatus;
 import de.ait.javaproglessonspro.enums.FuelType;
 import de.ait.javaproglessonspro.enums.Transmission;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.beans.factory.annotation.Value;
 
 @Entity
 @Table(name = "cars")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public class Car {
 
     @Id
@@ -62,6 +54,96 @@ public class Car {
     @Min(value = 1, message = "Horsepower must be greater than 0")
     private int horsepower;
 
+
+    public Car() {}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getProductionYear() {
+        return productionYear;
+    }
+
+    public void setProductionYear(int productionYear) {
+        this.productionYear = productionYear;
+    }
+
+    public int getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public CarStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(CarStatus status) {
+        this.status = status;
+    }
+
+    public FuelType getFuelType() {
+        return fuelType;
+    }
+
+    public void setFuelType(FuelType fuelType) {
+        this.fuelType = fuelType;
+    }
+
+    public Transmission getTransmission() {
+        return transmission;
+    }
+
+    public void setTransmission(Transmission transmission) {
+        this.transmission = transmission;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getHorsepower() {
+        return horsepower;
+    }
+
+    public void setHorsepower(int horsepower) {
+        this.horsepower = horsepower;
+    }
 
     public Car(String brand, String model,
                int productionYear,

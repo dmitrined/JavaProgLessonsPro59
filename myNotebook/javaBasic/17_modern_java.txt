@@ -1,0 +1,71 @@
+### Новые возможности Java (Records, Sealed Classes и др.)
+
+#### 1. Records (Записи) — Java 14+ (LTS 17)
+`Record` — это компактный синтаксис для объявления классов, которые предназначены только для хранения данных.
+
+**Что делает Record автоматически?**
+*   Создает неизменяемые (final) поля.
+*   Генерирует конструктор со всеми параметрами.
+*   Генерирует методы доступа (геттеры) вида `name()` вместо `getName()`.
+*   Генерирует методы `equals()`, `hashCode()` и `toString()`.
+
+**Пример:**
+```java
+// Обычный класс (много boilerplate кода) vs Record
+public record User(Long id, String username, String email) {}
+
+// Использование:
+User user = new User(1L, "admin", "admin@test.com");
+System.out.println(user.username()); // "admin"
+```
+
+---
+
+#### 2. Sealed Classes (Запечатанные классы) — Java 15+ (LTS 17)
+Позволяют ограничить круг классов, которые могут наследоваться от данного класса или интерфейса.
+
+**Синтаксис:**
+```java
+public sealed interface Shape permits Circle, Square, Triangle {}
+
+public final class Circle implements Shape {} // Должен быть final, sealed или non-sealed
+```
+Это полезно для создания закрытых иерархий типов, что улучшает безопасность и позволяет компилятору проверять полноту проверок (например, в `switch`).
+
+---
+
+#### 3. Pattern Matching (Сопоставление с образцом)
+*   **Для instanceof (Java 16+):**
+    ```java
+    if (obj instanceof String s) {
+        System.out.println(s.length()); // Переменная 's' уже приведена к типу String
+    }
+    ```
+*   **Для switch (Java 17/21+):** Позволяет использовать типы и условия прямо в `case`.
+
+---
+
+#### 4. Text Blocks (Текстовые блоки) — Java 13+ (LTS 15)
+Упрощают написание многострочных строк (JSON, SQL, HTML).
+```java
+String json = """
+    {
+      "name": "Alice",
+      "age": 30
+    }
+    """;
+```
+
+---
+
+#### 5. Switch Expressions — Java 12+ (LTS 14)
+Позволяет использовать `switch` как выражение, возвращающее значение.
+```java
+int numLetters = switch (day) {
+    case MONDAY, FRIDAY, SUNDAY -> 6;
+    case TUESDAY                -> 7;
+    case THURSDAY, SATURDAY     -> 8;
+    case WEDNESDAY              -> 9;
+};
+```
+Использует стрелочный синтаксис `->` и ключевое слово `yield` (если нужен блок кода).

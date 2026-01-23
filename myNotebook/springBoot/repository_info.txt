@@ -6,7 +6,10 @@ Repository — компонент слоя доступа к данным (DAO),
 - формирует запросы к БД,
 - скрывает SQL и JPA API.
 
-Spring Data JPA генерирует реализацию автоматически по интерфейсу:
+Spring Data JPA:
+- генерирует реализацию автоматически,
+- по интерфейсу.
+
 public interface UserRepository extends JpaRepository<User, Long> {
 }
 
