@@ -50,7 +50,7 @@ public class CarControllerIT {
         car.setBrand(brand);
         car.setModel(model);
         car.setProductionYear(2020);
-        car.setMileage(30000);
+        car.setMileage(30000L);
         car.setPrice(30000);
         car.setStatus(CarStatus.AVAILABLE);
         car.setColor("red");

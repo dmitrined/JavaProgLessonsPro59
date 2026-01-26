@@ -92,6 +92,11 @@ public class CarController {
     @Operation(summary = "Update one car by id")
     @PutMapping("/{id}")
     public ResponseEntity updateCar(@PathVariable Long id, @RequestBody Car car) {
+        CarValidator carValidator = new CarValidator();
+        List<String> errors = carValidator.validateWithErrors(car);
+        if(!errors.isEmpty()) {
+            return ResponseEntity.badRequest().body(errors);
+        }
         if (carRepository.existsById(id)) {
             Car carToUpdate = carRepository.findById(id).orElse(null);
             carToUpdate.setBrand(car.getBrand());

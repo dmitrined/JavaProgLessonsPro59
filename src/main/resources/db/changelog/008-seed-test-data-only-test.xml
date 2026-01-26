@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.24.xsd">
+
+    <changeSet id="008-seed-test-data" author="Dmitri Nedioglo" context="test">
+
+        <insert tableName="cars">
+            <column name="brand" value="Toyota"/>
+            <column name="model" value="Camry"/>
+            <column name="production_year" valueNumeric="2022"/>
+            <column name="price" valueNumeric="35000"/>
+            <column name="mileage" valueNumeric="5000"/>
+            <column name="status" value="AVAILABLE"/>
+            <column name="fuel_type" value="PETROL"/>
+            <column name="transmission" value="AUTOMATIC"/>
+            <column name="color" value="BLACK"/>
+            <column name="horsepower" valueNumeric="200"/>
+        </insert>
+
+        <insert tableName="cars">
+            <column name="brand" value="BMW"/>
+            <column name="model" value="M5"/>
+            <column name="production_year" valueNumeric="2021"/>
+            <column name="price" valueNumeric="95000"/>
+            <column name="mileage" valueNumeric="12000"/>
+            <column name="status" value="SOLD"/>
+            <column name="fuel_type" value="DIESEL"/>
+            <column name="transmission" value="AUTOMATIC"/>
+            <column name="color" value="WHITE"/>
+            <column name="horsepower" valueNumeric="600"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

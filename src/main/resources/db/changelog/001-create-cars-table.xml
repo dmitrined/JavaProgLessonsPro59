@@ -8,7 +8,7 @@
 
     <changeSet id="001-create-cars-table" author="Dmitri Nedioglo">
         <createTable tableName="cars">
-            <column name="id" type="BIGINT">
+            <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
 
