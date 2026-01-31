@@ -10,6 +10,38 @@ import lombok.Setter;
 @Setter
 public class CarOfferEmailRequest {
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getClientName() {
+        return clientName;
+    }
+
+    public void setClientName(String clientName) {
+        this.clientName = clientName;
+    }
+
+    public Long getCarId() {
+        return carId;
+    }
+
+    public void setCarId(Long carId) {
+        this.carId = carId;
+    }
+
+    public Integer getOfferPrice() {
+        return offerPrice;
+    }
+
+    public void setOfferPrice(Integer offerPrice) {
+        this.offerPrice = offerPrice;
+    }
+
     @NotBlank(message = "Email is mandatory")
     private String email;
 
