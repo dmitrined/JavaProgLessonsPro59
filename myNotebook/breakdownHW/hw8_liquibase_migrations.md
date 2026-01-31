@@ -18,7 +18,6 @@ Liquibase — это инструмент для управления верси
 ```xml
 <include file="db/changelog/001-create-cars-table.xml"/>
 <include file="db/changelog/002-add-collumns.xml"/>
-...
 ```
 
 ---
