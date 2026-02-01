@@ -1,0 +1,610 @@
+2026-01-31 21:34:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:34:30 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 16475 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:34:30 [main] DEBUG d.a.j.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:34:30 [main] INFO  d.a.j.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-31 21:34:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:34:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-01-31 21:34:31 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-31 21:34:31 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:34:31 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-31 21:34:31 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-31 21:34:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-31 21:34:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 470 ms
+2026-01-31 21:34:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:34:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdb user=SA
+2026-01-31 21:34:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:34:31 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:34:31 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:34:31 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-01-31 21:34:31 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:34:31 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:34:31 [main] INFO  liquibase.util - Run:                          0
+2026-01-31 21:34:31 [main] INFO  liquibase.util - Previously run:               7
+2026-01-31 21:34:31 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:34:31 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:34:31 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:34:31 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:34:31 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:34:31 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:34:31 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:34:32 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:34:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:34:32 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:34:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:34:32 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:34:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:34:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:34:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:34:33 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2026-01-31 21:34:33 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:34:33 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-31 21:34:33 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 2.255 seconds (process running for 2.657)
+2026-01-31 21:34:33 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:34:33 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:35:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-31 21:35:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-31 21:35:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-31 21:35:29 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (' ' (code 160)): was expecting double-quote to start field name]
+2026-01-31 21:38:40 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-31 21:38:40 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-31 21:38:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:38:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 21:38:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 21:41:23 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:41:23 [main] INFO  d.a.j.controllers.EmailControllerIT - Starting EmailControllerIT using Java 21.0.9 with PID 16550 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:41:23 [main] DEBUG d.a.j.controllers.EmailControllerIT - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:41:23 [main] INFO  d.a.j.controllers.EmailControllerIT - The following 1 profile is active: "test"
+2026-01-31 21:41:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:41:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2026-01-31 21:41:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:41:24 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-01-31 21:41:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:41:25 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:41:25 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-01-31 21:41:25 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-01-31 21:41:25 [main] INFO  liquibase.command - Using deploymentId: 9892084887
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Table cars created
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 5ms
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 7ms
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 1ms
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 5ms
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 7ms
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-01-31 21:41:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 3ms
+2026-01-31 21:41:25 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:41:25 [main] INFO  liquibase.util - Run:                          7
+2026-01-31 21:41:25 [main] INFO  liquibase.util - Previously run:               0
+2026-01-31 21:41:25 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:41:25 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:41:25 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:41:25 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:41:25 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:41:25 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:41:25 [main] INFO  liquibase.command - Update command completed successfully.
+2026-01-31 21:41:25 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 8
+2026-01-31 21:41:25 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-01-31 21:41:25 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:41:25 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:41:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:41:25 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:41:25 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:41:25 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:41:26 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:41:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:41:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:41:26 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-31 21:41:26 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-01-31 21:41:26 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2026-01-31 21:41:26 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+2026-01-31 21:41:26 [main] INFO  d.a.j.controllers.EmailControllerIT - Started EmailControllerIT in 3.114 seconds (process running for 3.571)
+2026-01-31 21:41:26 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:41:26 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:41:26 [main] INFO  d.a.j.controllers.EmailController - Sending car offer email for request: de.ait.javaproglessonspro.dto.CarOfferEmailRequest@a0d3cc7
+2026-01-31 21:41:26 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public void de.ait.javaproglessonspro.controllers.EmailController.sendCarOfferEmail(de.ait.javaproglessonspro.dto.CarOfferEmailRequest): [Field error in object 'carOfferEmailRequest' on field 'email': rejected value []; codes [NotBlank.carOfferEmailRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carOfferEmailRequest.email,email]; arguments []; default message [email]]; default message [Email is mandatory]] ]
+2026-01-31 21:41:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:41:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 21:41:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 21:41:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:41:44 [main] INFO  d.a.j.controllers.EmailControllerIT - Starting EmailControllerIT using Java 21.0.9 with PID 16567 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:41:44 [main] DEBUG d.a.j.controllers.EmailControllerIT - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:41:44 [main] INFO  d.a.j.controllers.EmailControllerIT - The following 1 profile is active: "test"
+2026-01-31 21:41:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:41:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2026-01-31 21:41:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:41:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-01-31 21:41:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:41:45 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:41:45 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-01-31 21:41:45 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-01-31 21:41:45 [main] INFO  liquibase.command - Using deploymentId: 9892105381
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Table cars created
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 3ms
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 6ms
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 0ms
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 3ms
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 5ms
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-01-31 21:41:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-01-31 21:41:45 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:41:45 [main] INFO  liquibase.util - Run:                          7
+2026-01-31 21:41:45 [main] INFO  liquibase.util - Previously run:               0
+2026-01-31 21:41:45 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:41:45 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:41:45 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:41:45 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:41:45 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:41:45 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:41:45 [main] INFO  liquibase.command - Update command completed successfully.
+2026-01-31 21:41:45 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 8
+2026-01-31 21:41:45 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-01-31 21:41:45 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:41:46 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:41:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:41:46 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:41:46 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:41:46 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:41:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:41:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:41:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:41:46 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-31 21:41:46 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-01-31 21:41:46 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2026-01-31 21:41:46 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Completed initialization in 1 ms
+2026-01-31 21:41:46 [main] INFO  d.a.j.controllers.EmailControllerIT - Started EmailControllerIT in 2.514 seconds (process running for 2.949)
+2026-01-31 21:41:46 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:41:46 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:41:47 [main] INFO  d.a.j.controllers.EmailController - Sending car offer email for request: de.ait.javaproglessonspro.dto.CarOfferEmailRequest@495fa126
+2026-01-31 21:41:47 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public void de.ait.javaproglessonspro.controllers.EmailController.sendCarOfferEmail(de.ait.javaproglessonspro.dto.CarOfferEmailRequest): [Field error in object 'carOfferEmailRequest' on field 'email': rejected value []; codes [NotBlank.carOfferEmailRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [carOfferEmailRequest.email,email]; arguments []; default message [email]]; default message [Email is mandatory]] ]
+2026-01-31 21:41:47 [main] INFO  d.a.j.controllers.EmailController - Sending car offer email for request: de.ait.javaproglessonspro.dto.CarOfferEmailRequest@64176780
+2026-01-31 21:41:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:41:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 21:41:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 21:42:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:42:33 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 16730 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:42:33 [main] DEBUG d.a.j.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:42:33 [main] INFO  d.a.j.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-31 21:42:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:42:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2026-01-31 21:42:33 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-31 21:42:33 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:42:33 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-31 21:42:33 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-31 21:42:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-31 21:42:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 415 ms
+2026-01-31 21:42:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:42:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdb user=SA
+2026-01-31 21:42:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:42:33 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:42:33 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:42:34 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-01-31 21:42:34 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:42:34 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:42:34 [main] INFO  liquibase.util - Run:                          0
+2026-01-31 21:42:34 [main] INFO  liquibase.util - Previously run:               7
+2026-01-31 21:42:34 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:42:34 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:42:34 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:42:34 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:42:34 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:42:34 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:42:34 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:42:34 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:42:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:42:34 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:42:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:42:34 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:42:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:42:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:42:34 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:42:34 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2026-01-31 21:42:34 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:42:34 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-31 21:42:34 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 1.923 seconds (process running for 2.139)
+2026-01-31 21:42:34 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:42:34 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:42:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-31 21:42:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-31 21:42:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-31 21:42:41 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (' ' (code 160)): was expecting double-quote to start field name]
+2026-01-31 21:44:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:44:53 [main] INFO  d.a.j.controllers.EmailControllerIT - Starting EmailControllerIT using Java 21.0.9 with PID 16915 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:44:53 [main] DEBUG d.a.j.controllers.EmailControllerIT - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:44:53 [main] INFO  d.a.j.controllers.EmailControllerIT - The following 1 profile is active: "test"
+2026-01-31 21:44:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:44:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2026-01-31 21:44:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:44:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-01-31 21:44:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:44:54 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:44:54 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-01-31 21:44:54 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-01-31 21:44:54 [main] INFO  liquibase.command - Using deploymentId: 9892294424
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Table cars created
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 4ms
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 6ms
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 0ms
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 3ms
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 6ms
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-01-31 21:44:54 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-01-31 21:44:54 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:44:54 [main] INFO  liquibase.util - Run:                          7
+2026-01-31 21:44:54 [main] INFO  liquibase.util - Previously run:               0
+2026-01-31 21:44:54 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:44:54 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:44:54 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:44:54 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:44:54 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:44:54 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:44:54 [main] INFO  liquibase.command - Update command completed successfully.
+2026-01-31 21:44:54 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 8
+2026-01-31 21:44:54 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-01-31 21:44:54 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:44:55 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:44:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:44:55 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:44:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:44:55 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:44:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:44:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:44:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:44:56 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-31 21:44:56 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-01-31 21:44:56 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2026-01-31 21:44:56 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Completed initialization in 0 ms
+2026-01-31 21:44:56 [main] INFO  d.a.j.controllers.EmailControllerIT - Started EmailControllerIT in 2.208 seconds (process running for 2.637)
+2026-01-31 21:44:56 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:44:56 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:44:56 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:44:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 21:44:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 21:45:03 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-31 21:45:03 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-31 21:45:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:45:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 21:45:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 21:45:11 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:45:11 [main] INFO  d.a.j.controllers.EmailControllerIT - Starting EmailControllerIT using Java 21.0.9 with PID 16932 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:45:11 [main] DEBUG d.a.j.controllers.EmailControllerIT - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:45:11 [main] INFO  d.a.j.controllers.EmailControllerIT - The following 1 profile is active: "test"
+2026-01-31 21:45:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:45:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2026-01-31 21:45:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:45:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-01-31 21:45:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:45:12 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:45:12 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-01-31 21:45:12 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-01-31 21:45:12 [main] INFO  liquibase.command - Using deploymentId: 9892312455
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Table cars created
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 4ms
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 6ms
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 1ms
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 5ms
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 6ms
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-01-31 21:45:12 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-01-31 21:45:12 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:45:12 [main] INFO  liquibase.util - Run:                          7
+2026-01-31 21:45:12 [main] INFO  liquibase.util - Previously run:               0
+2026-01-31 21:45:12 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:45:12 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:45:12 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:45:12 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:45:12 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:45:12 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:45:12 [main] INFO  liquibase.command - Update command completed successfully.
+2026-01-31 21:45:12 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 8
+2026-01-31 21:45:12 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-01-31 21:45:12 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:45:13 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:45:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:45:13 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:45:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:45:13 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:45:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:45:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:45:13 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:45:14 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-01-31 21:45:14 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-01-31 21:45:14 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2026-01-31 21:45:14 [main] INFO  o.s.t.web.servlet.TestDispatcherServlet - Completed initialization in 1 ms
+2026-01-31 21:45:14 [main] INFO  d.a.j.controllers.EmailControllerIT - Started EmailControllerIT in 2.23 seconds (process running for 2.626)
+2026-01-31 21:45:14 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:45:14 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:45:14 [main] INFO  d.a.j.controllers.EmailController - Sending car offer email for request: de.ait.javaproglessonspro.dto.CarOfferEmailRequest@13ecedf6
+2026-01-31 21:45:14 [main] INFO  d.a.j.service.CarOfferEmailService - Sending email to lida.ned0430@gmail.com
+2026-01-31 21:45:16 [main] INFO  d.a.j.service.CarOfferEmailService - Email sent to lida.ned0430@gmail.com
+2026-01-31 21:45:16 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (' ' (code 160)): was expecting double-quote to start field name]
+2026-01-31 21:45:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:45:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 21:45:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 21:46:35 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:46:35 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 16995 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:46:35 [main] DEBUG d.a.j.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:46:35 [main] INFO  d.a.j.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-31 21:46:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:46:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2026-01-31 21:46:36 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-31 21:46:36 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:46:36 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-31 21:46:36 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-31 21:46:36 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-31 21:46:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 402 ms
+2026-01-31 21:46:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:46:36 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdb user=SA
+2026-01-31 21:46:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:46:36 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:46:36 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:46:36 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-01-31 21:46:36 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:46:36 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:46:36 [main] INFO  liquibase.util - Run:                          0
+2026-01-31 21:46:36 [main] INFO  liquibase.util - Previously run:               7
+2026-01-31 21:46:36 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:46:36 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:46:36 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:46:36 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:46:36 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:46:36 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:46:36 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:46:36 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:46:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:46:36 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:46:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:46:36 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:46:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:46:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:46:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:46:37 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2026-01-31 21:46:37 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:46:37 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-31 21:46:37 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 2.03 seconds (process running for 2.338)
+2026-01-31 21:46:37 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:46:37 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:46:41 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-31 21:46:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-31 21:46:41 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-31 21:46:41 [http-nio-8080-exec-1] INFO  d.a.j.controllers.EmailController - Sending car offer email for request: de.ait.javaproglessonspro.dto.CarOfferEmailRequest@75bc759f
+2026-01-31 21:46:42 [http-nio-8080-exec-1] INFO  d.a.j.service.CarOfferEmailService - Sending email to lida.ned0430@gmail.com
+2026-01-31 21:46:43 [http-nio-8080-exec-1] INFO  d.a.j.service.CarOfferEmailService - Email sent to lida.ned0430@gmail.com
+2026-01-31 21:50:10 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-31 21:50:10 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-31 21:50:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:50:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 21:50:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 21:56:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 21:56:49 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 17062 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 21:56:49 [main] DEBUG d.a.j.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 21:56:49 [main] INFO  d.a.j.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-31 21:56:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 21:56:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2026-01-31 21:56:49 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-31 21:56:49 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:56:49 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-31 21:56:49 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-31 21:56:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-31 21:56:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 448 ms
+2026-01-31 21:56:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 21:56:50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdb user=SA
+2026-01-31 21:56:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 21:56:50 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 21:56:50 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:56:50 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-01-31 21:56:50 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 21:56:50 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 21:56:50 [main] INFO  liquibase.util - Run:                          0
+2026-01-31 21:56:50 [main] INFO  liquibase.util - Previously run:               7
+2026-01-31 21:56:50 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 21:56:50 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 21:56:50 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 21:56:50 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 21:56:50 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 21:56:50 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 21:56:50 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 21:56:50 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 21:56:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 21:56:50 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 21:56:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 21:56:50 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 21:56:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 21:56:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 21:56:51 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 21:56:51 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2026-01-31 21:56:51 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-31 21:56:51 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-31 21:56:51 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 2.198 seconds (process running for 2.477)
+2026-01-31 21:56:51 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 21:56:51 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 21:59:31 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-31 21:59:31 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-31 21:59:31 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-31 21:59:31 [http-nio-8080-exec-2] INFO  d.a.j.c.TestDriveEmailController - Request for test drive confirmation received: TestDriveConfirmationEmailRequest(clientEmail=lida.ned0430@gmail.com, clientName=Lidia, carId=1, testDriveDateTime=01.02.2026, dealerAddress=Stuttgart, dealerPhone=+49123456789)
+2026-01-31 21:59:31 [http-nio-8080-exec-2] INFO  d.a.j.service.TestDriveEmailService - Preparing confirmation email for client: lida.ned0430@gmail.com, carId: 1
+2026-01-31 21:59:33 [http-nio-8080-exec-2] INFO  d.a.j.service.TestDriveEmailService - Email 'Test Drive Confirmation' successfully sent to lida.ned0430@gmail.com. CarId: 1, DateTime: 01.02.2026
+2026-01-31 22:01:23 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-31 22:01:23 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-31 22:01:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 22:01:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 22:01:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-31 22:04:27 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-01-31 22:04:27 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 17127 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-01-31 22:04:27 [main] DEBUG d.a.j.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-01-31 22:04:27 [main] INFO  d.a.j.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-31 22:04:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31 22:04:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2026-01-31 22:04:27 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-31 22:04:27 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-31 22:04:27 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-31 22:04:27 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-31 22:04:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-31 22:04:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 450 ms
+2026-01-31 22:04:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 22:04:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/testdb user=SA
+2026-01-31 22:04:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 22:04:28 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-01-31 22:04:28 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 22:04:28 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-01-31 22:04:28 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-01-31 22:04:28 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-01-31 22:04:28 [main] INFO  liquibase.util - Run:                          0
+2026-01-31 22:04:28 [main] INFO  liquibase.util - Previously run:               7
+2026-01-31 22:04:28 [main] INFO  liquibase.util - Filtered out:                 1
+2026-01-31 22:04:28 [main] INFO  liquibase.util - -------------------------------
+2026-01-31 22:04:28 [main] INFO  liquibase.util - Total change sets:            8
+2026-01-31 22:04:28 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-01-31 22:04:28 [main] INFO  liquibase.util - Context mismatch:             1
+2026-01-31 22:04:28 [main] INFO  liquibase.util - Update summary generated
+2026-01-31 22:04:28 [main] INFO  liquibase.command - Command execution complete
+2026-01-31 22:04:28 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-31 22:04:28 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-01-31 22:04:28 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-31 22:04:28 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31 22:04:28 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 22:04:29 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 22:04:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 22:04:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 22:04:29 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2026-01-31 22:04:29 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-31 22:04:29 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-31 22:04:29 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 2.081 seconds (process running for 2.348)
+2026-01-31 22:04:29 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-31 22:04:29 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-31 22:05:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-31 22:05:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-31 22:05:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-31 22:05:23 [http-nio-8080-exec-1] INFO  d.a.j.c.TestDriveEmailController - Request for test drive reminder received: TestDriveConfirmationEmailRequest(clientEmail=lida.ned0430@gmail.com, clientName=Любимая, carId=1, testDriveDateTime=10:00, dealerAddress=Stuttgart, dealerPhone=+49123456789)
+2026-01-31 22:05:23 [http-nio-8080-exec-1] INFO  d.a.j.service.TestDriveEmailService - Preparing reminder email for client: lida.ned0430@gmail.com, carId: 1
+2026-01-31 22:05:24 [http-nio-8080-exec-1] INFO  d.a.j.service.TestDriveEmailService - Email 'Test Drive Reminder' successfully sent to lida.ned0430@gmail.com. CarId: 1, DateTime: 10:00
+2026-01-31 22:11:22 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-31 22:11:22 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-31 22:11:22 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31 22:11:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-31 22:11:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
