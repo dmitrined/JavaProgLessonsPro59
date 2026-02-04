@@ -7,8 +7,8 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.24.xsd">
 
     <changeSet id="004-seed-test-data" author="Dmitri Nedioglo">
+        <validCheckSum>ANY</validCheckSum>
         <insert tableName="cars">
-            <column name="id" valueNumeric="1"/>
             <column name="brand" value="BMW"/>
             <column name="model" value="X5"/>
             <column name="production_year" valueNumeric="2020"/>

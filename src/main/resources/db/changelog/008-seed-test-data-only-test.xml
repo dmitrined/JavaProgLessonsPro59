@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.24.xsd">
 
-    <changeSet id="008-seed-test-data" author="Dmitri Nedioglo" context="test">
+    <changeSet id="008-seed-test-data-v2" author="Dmitri Nedioglo" context="test">
 
         <insert tableName="cars">
             <column name="brand" value="Toyota"/>
