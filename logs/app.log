@@ -4990,3 +4990,531 @@ INSERT INTO PUBLIC.cars (brand, model, production_year, price, mileage, status, 
 2026-02-04 19:31:54 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-02-04 19:31:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-02-04 19:31:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 19:55:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-04 19:55:41 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 19284 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-02-04 19:55:41 [main] DEBUG d.a.j.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-02-04 19:55:41 [main] INFO  d.a.j.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-04 19:55:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 19:55:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2026-02-04 19:55:41 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-04 19:55:41 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-04 19:55:41 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-04 19:55:41 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-04 19:55:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-04 19:55:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 513 ms
+2026-02-04 19:55:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 19:55:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-04 19:55:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 19:55:41 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 19:55:42 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-02-04 19:55:42 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-02-04 19:55:42 [main] INFO  liquibase.command - Using deploymentId: 0231341877
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Table cars created
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 0ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 4ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Table client_documents_db created
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Running Changeset: db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Table car_documents_os created
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - Foreign key constraint added to car_documents_os (car_id)
+2026-02-04 19:55:42 [main] INFO  liquibase.changelog - ChangeSet db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 19:55:42 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-02-04 19:55:42 [main] INFO  liquibase.util - Run:                         10
+2026-02-04 19:55:42 [main] INFO  liquibase.util - Previously run:               0
+2026-02-04 19:55:42 [main] INFO  liquibase.util - Filtered out:                 0
+2026-02-04 19:55:42 [main] INFO  liquibase.util - -------------------------------
+2026-02-04 19:55:42 [main] INFO  liquibase.util - Total change sets:           10
+2026-02-04 19:55:42 [main] INFO  liquibase.util - Update summary generated
+2026-02-04 19:55:42 [main] INFO  liquibase.command - Update command completed successfully.
+2026-02-04 19:55:42 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 13
+2026-02-04 19:55:42 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-04 19:55:42 [main] INFO  liquibase.command - Command execution complete
+2026-02-04 19:55:42 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-04 19:55:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-02-04 19:55:42 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-04 19:55:42 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 19:55:42 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 19:55:43 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 19:55:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 19:55:43 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-04 19:55:43 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 19:55:43 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-04 19:55:43 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-04 19:55:43 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-04 19:55:43 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 2.608 seconds (process running for 2.899)
+2026-02-04 19:55:43 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-04 19:55:43 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-04 19:55:50 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-04 19:55:50 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-04 19:55:50 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-04 19:59:48 [http-nio-8080-exec-5] INFO  d.a.j.service.CarDocumentsOsService - Car document with id 1 saved
+2026-02-04 19:59:48 [http-nio-8080-exec-5] INFO  d.a.j.controllers.CarDocumentController - Car document with id 1 saved
+2026-02-04 20:10:09 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'docType': Failed to convert value of type 'java.lang.String' to required type 'de.ait.javaproglessonspro.enums.CarDocumentType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam de.ait.javaproglessonspro.enums.CarDocumentType] for value [AUTO_DOCUMENT]]
+2026-02-04 20:11:06 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'docType': Failed to convert value of type 'java.lang.String' to required type 'de.ait.javaproglessonspro.enums.CarDocumentType'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam de.ait.javaproglessonspro.enums.CarDocumentType] for value [AUTO_DOCUMENT]]
+2026-02-04 20:11:23 [http-nio-8080-exec-2] INFO  d.a.j.service.CarDocumentsOsService - Car document with id 2 saved
+2026-02-04 20:11:23 [http-nio-8080-exec-2] INFO  d.a.j.controllers.CarDocumentController - Car document with id 2 saved
+2026-02-04 20:14:21 [http-nio-8080-exec-5] INFO  d.a.j.service.CarDocumentsOsService - Car document with id 3 saved
+2026-02-04 20:14:21 [http-nio-8080-exec-5] INFO  d.a.j.controllers.CarDocumentController - Car document with id 3 saved
+2026-02-04 20:19:47 [http-nio-8080-exec-7] INFO  d.a.j.service.CarDocumentsOsService - Car document with id 4 saved
+2026-02-04 20:19:47 [http-nio-8080-exec-7] INFO  d.a.j.controllers.CarDocumentController - Car document with id 4 saved
+2026-02-04 20:20:50 [http-nio-8080-exec-1] INFO  d.a.j.service.CarDocumentsOsService - Car document with id 5 saved
+2026-02-04 20:20:50 [http-nio-8080-exec-1] INFO  d.a.j.controllers.CarDocumentController - Car document with id 5 saved
+2026-02-04 20:23:11 [http-nio-8080-exec-4] INFO  d.a.j.service.CarDocumentsOsService - Car document with id 6 saved
+2026-02-04 20:23:11 [http-nio-8080-exec-4] INFO  d.a.j.controllers.CarDocumentController - Car document with id 6 saved
+2026-02-04 20:32:42 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-04 20:32:42 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-04 20:32:44 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:32:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 20:32:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 20:36:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-04 20:36:25 [main] INFO  d.a.j.controllers.LiquibaseIT - Starting LiquibaseIT using Java 21.0.9 with PID 19867 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-02-04 20:36:25 [main] DEBUG d.a.j.controllers.LiquibaseIT - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-02-04 20:36:25 [main] INFO  d.a.j.controllers.LiquibaseIT - The following 1 profile is active: "test"
+2026-02-04 20:36:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 20:36:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2026-02-04 20:36:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 20:36:26 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-04 20:36:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 20:36:26 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:36:26 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-02-04 20:36:26 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-02-04 20:36:26 [main] INFO  liquibase.command - Using deploymentId: 0233786141
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Table cars created
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 4ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 6ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 4ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Table client_documents_db created
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Running Changeset: db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Table car_documents_os created
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - Foreign key constraint added to car_documents_os (car_id)
+2026-02-04 20:36:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo ran successfully in 4ms
+2026-02-04 20:36:26 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-02-04 20:36:26 [main] INFO  liquibase.util - Run:                         10
+2026-02-04 20:36:26 [main] INFO  liquibase.util - Previously run:               0
+2026-02-04 20:36:26 [main] INFO  liquibase.util - Filtered out:                 0
+2026-02-04 20:36:26 [main] INFO  liquibase.util - -------------------------------
+2026-02-04 20:36:26 [main] INFO  liquibase.util - Total change sets:           10
+2026-02-04 20:36:26 [main] INFO  liquibase.util - Update summary generated
+2026-02-04 20:36:26 [main] INFO  liquibase.command - Update command completed successfully.
+2026-02-04 20:36:26 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 13
+2026-02-04 20:36:26 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-04 20:36:26 [main] INFO  liquibase.command - Command execution complete
+2026-02-04 20:36:27 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-04 20:36:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-02-04 20:36:27 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-04 20:36:27 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 20:36:27 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 20:36:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 20:36:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:36:27 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-04 20:36:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 20:36:28 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-04 20:36:28 [main] INFO  d.a.j.controllers.LiquibaseIT - Started LiquibaseIT in 2.701 seconds (process running for 3.251)
+2026-02-04 20:36:28 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-04 20:36:28 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-04 20:36:30 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:36:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 20:36:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 20:37:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-04 20:37:52 [main] INFO  d.a.j.controllers.LiquibaseIT - Starting LiquibaseIT using Java 21.0.9 with PID 19984 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-02-04 20:37:52 [main] DEBUG d.a.j.controllers.LiquibaseIT - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-02-04 20:37:52 [main] INFO  d.a.j.controllers.LiquibaseIT - The following 1 profile is active: "test"
+2026-02-04 20:37:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 20:37:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2026-02-04 20:37:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 20:37:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-04 20:37:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 20:37:53 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:37:53 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-02-04 20:37:53 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-02-04 20:37:53 [main] INFO  liquibase.command - Using deploymentId: 0233873287
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Table cars created
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Table client_documents_db created
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Running Changeset: db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Table car_documents_os created
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - Foreign key constraint added to car_documents_os (car_id)
+2026-02-04 20:37:53 [main] INFO  liquibase.changelog - ChangeSet db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:37:53 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-02-04 20:37:53 [main] INFO  liquibase.util - Run:                         10
+2026-02-04 20:37:53 [main] INFO  liquibase.util - Previously run:               0
+2026-02-04 20:37:53 [main] INFO  liquibase.util - Filtered out:                 0
+2026-02-04 20:37:53 [main] INFO  liquibase.util - -------------------------------
+2026-02-04 20:37:53 [main] INFO  liquibase.util - Total change sets:           10
+2026-02-04 20:37:53 [main] INFO  liquibase.util - Update summary generated
+2026-02-04 20:37:53 [main] INFO  liquibase.command - Update command completed successfully.
+2026-02-04 20:37:53 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 13
+2026-02-04 20:37:53 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-04 20:37:53 [main] INFO  liquibase.command - Command execution complete
+2026-02-04 20:37:54 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-04 20:37:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-02-04 20:37:54 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-04 20:37:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 20:37:54 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 20:37:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 20:37:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:37:54 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-04 20:37:55 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 20:37:55 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-04 20:37:55 [main] INFO  d.a.j.controllers.LiquibaseIT - Started LiquibaseIT in 2.622 seconds (process running for 3.066)
+2026-02-04 20:37:55 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-04 20:37:55 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-04 20:37:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:37:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 20:37:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 20:38:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-04 20:38:13 [main] INFO  d.a.j.JavaProgLessonsPro59ApplicationTests - Starting JavaProgLessonsPro59ApplicationTests using Java 21.0.9 with PID 20006 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-02-04 20:38:13 [main] DEBUG d.a.j.JavaProgLessonsPro59ApplicationTests - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-02-04 20:38:13 [main] INFO  d.a.j.JavaProgLessonsPro59ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-04 20:38:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 20:38:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2026-02-04 20:38:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 20:38:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-04 20:38:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 20:38:13 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-02-04 20:38:13 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:13 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:13 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-02-04 20:38:14 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-02-04 20:38:14 [main] INFO  liquibase.command - Using deploymentId: 0233893621
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Table cars created
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 4ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 0ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Table client_documents_db created
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Running Changeset: db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Table car_documents_os created
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - Foreign key constraint added to car_documents_os (car_id)
+2026-02-04 20:38:14 [main] INFO  liquibase.changelog - ChangeSet db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:38:14 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-02-04 20:38:14 [main] INFO  liquibase.util - Run:                          9
+2026-02-04 20:38:14 [main] INFO  liquibase.util - Previously run:               0
+2026-02-04 20:38:14 [main] INFO  liquibase.util - Filtered out:                 1
+2026-02-04 20:38:14 [main] INFO  liquibase.util - -------------------------------
+2026-02-04 20:38:14 [main] INFO  liquibase.util - Total change sets:           10
+2026-02-04 20:38:14 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-02-04 20:38:14 [main] INFO  liquibase.util - Context mismatch:             1
+2026-02-04 20:38:14 [main] INFO  liquibase.util - Update summary generated
+2026-02-04 20:38:14 [main] INFO  liquibase.command - Update command completed successfully.
+2026-02-04 20:38:14 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 10
+2026-02-04 20:38:14 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-04 20:38:14 [main] INFO  liquibase.command - Command execution complete
+2026-02-04 20:38:14 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-04 20:38:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-02-04 20:38:14 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-04 20:38:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 20:38:14 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 20:38:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 20:38:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:38:15 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-04 20:38:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 20:38:15 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-04 20:38:15 [main] INFO  d.a.j.JavaProgLessonsPro59ApplicationTests - Started JavaProgLessonsPro59ApplicationTests in 2.461 seconds (process running for 2.86)
+2026-02-04 20:38:15 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-04 20:38:15 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-04 20:38:17 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:38:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 20:38:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 20:38:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-04 20:38:24 [main] INFO  d.a.j.controllers.LiquibaseIT - Starting LiquibaseIT using Java 21.0.9 with PID 20013 (started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-02-04 20:38:24 [main] DEBUG d.a.j.controllers.LiquibaseIT - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-02-04 20:38:24 [main] INFO  d.a.j.controllers.LiquibaseIT - The following 1 profile is active: "test"
+2026-02-04 20:38:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 20:38:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2026-02-04 20:38:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 20:38:24 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-04 20:38:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 20:38:24 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-02-04 20:38:24 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:24 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:24 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-02-04 20:38:24 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-02-04 20:38:24 [main] INFO  liquibase.command - Using deploymentId: 0233904564
+2026-02-04 20:38:24 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Table cars created
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 6ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 4ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 6ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/008-seed-test-data-only-test.xml::008-seed-test-data-v2::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Table client_documents_db created
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Running Changeset: db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Table car_documents_os created
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - Foreign key constraint added to car_documents_os (car_id)
+2026-02-04 20:38:25 [main] INFO  liquibase.changelog - ChangeSet db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:38:25 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-02-04 20:38:25 [main] INFO  liquibase.util - Run:                         10
+2026-02-04 20:38:25 [main] INFO  liquibase.util - Previously run:               0
+2026-02-04 20:38:25 [main] INFO  liquibase.util - Filtered out:                 0
+2026-02-04 20:38:25 [main] INFO  liquibase.util - -------------------------------
+2026-02-04 20:38:25 [main] INFO  liquibase.util - Total change sets:           10
+2026-02-04 20:38:25 [main] INFO  liquibase.util - Update summary generated
+2026-02-04 20:38:25 [main] INFO  liquibase.command - Update command completed successfully.
+2026-02-04 20:38:25 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 13
+2026-02-04 20:38:25 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-04 20:38:25 [main] INFO  liquibase.command - Command execution complete
+2026-02-04 20:38:25 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-04 20:38:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-02-04 20:38:25 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-04 20:38:25 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 20:38:25 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 20:38:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 20:38:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:38:26 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-04 20:38:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 20:38:26 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-04 20:38:26 [main] INFO  d.a.j.controllers.LiquibaseIT - Started LiquibaseIT in 2.499 seconds (process running for 2.95)
+2026-02-04 20:38:26 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-04 20:38:26 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-04 20:38:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:38:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 20:38:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 20:38:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-04 20:38:45 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Starting JavaProgLessonsPro59Application using Java 21.0.9 with PID 20034 (/Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59/target/classes started by dmitrinedioglo in /Users/dmitrinedioglo/Documents/JavaPro/JavaProgLessonsPro59)
+2026-02-04 20:38:45 [main] DEBUG d.a.j.JavaProgLessonsPro59Application - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-02-04 20:38:45 [main] INFO  d.a.j.JavaProgLessonsPro59Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-04 20:38:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 20:38:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2026-02-04 20:38:45 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-04 20:38:45 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-04 20:38:45 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-04 20:38:45 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-04 20:38:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-04 20:38:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 477 ms
+2026-02-04 20:38:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 20:38:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-04 20:38:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 20:38:45 [main] INFO  liquibase.database - Set default schema name to PUBLIC
+2026-02-04 20:38:45 [main] INFO  liquibase.changelog - Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:45 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:45 [main] INFO  liquibase.snapshot - Creating snapshot
+2026-02-04 20:38:46 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-02-04 20:38:46 [main] INFO  liquibase.command - Using deploymentId: 0233925649
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Reading from PUBLIC.DATABASECHANGELOG
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Table cars created
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/001-create-cars-table.xml::001-create-cars-table::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Columns color(VARCHAR(255)),horsepower(INT) added to cars
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/002-add-collumns.xml::002-add-color-horsepower::Dmitri Nedioglo ran successfully in 4ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - cars.mileage datatype was changed to BIGINT
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/003-modify-column.xml::003-change-mileage-type::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - New row inserted into cars
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/004-seed-test-data.xml::004-seed-test-data::Dmitri Nedioglo ran successfully in 0ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Columns created_at(TIMESTAMP),updated_at(TIMESTAMP) added to cars
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/005-add-audit-columns.xml::005-add-audit-columns::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/006-add-check-constraints.xml::006-add-check-constraints::Dmitri Nedioglo ran successfully in 5ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Columns deleted(BOOLEAN) added to cars
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/007-add-soft-delete-flag.xml::007-add-soft-delete-flag::Dmitri Nedioglo ran successfully in 2ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Table client_documents_db created
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/009-create-client-document-db-table.xml::009-create-client-documents-db-table::Dmitri Nedioglo ran successfully in 1ms
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Running Changeset: db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Table car_documents_os created
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - Foreign key constraint added to car_documents_os (car_id)
+2026-02-04 20:38:46 [main] INFO  liquibase.changelog - ChangeSet db/changelog/010-create-car-documents-os-table.xml::10-create-car-documents-os-table::Dmitri Nedioglo ran successfully in 3ms
+2026-02-04 20:38:46 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-02-04 20:38:46 [main] INFO  liquibase.util - Run:                          9
+2026-02-04 20:38:46 [main] INFO  liquibase.util - Previously run:               0
+2026-02-04 20:38:46 [main] INFO  liquibase.util - Filtered out:                 1
+2026-02-04 20:38:46 [main] INFO  liquibase.util - -------------------------------
+2026-02-04 20:38:46 [main] INFO  liquibase.util - Total change sets:           10
+2026-02-04 20:38:46 [main] INFO  liquibase.util - FILTERED CHANGE SETS SUMMARY
+2026-02-04 20:38:46 [main] INFO  liquibase.util - Context mismatch:             1
+2026-02-04 20:38:46 [main] INFO  liquibase.util - Update summary generated
+2026-02-04 20:38:46 [main] INFO  liquibase.command - Update command completed successfully.
+2026-02-04 20:38:46 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 10
+2026-02-04 20:38:46 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-04 20:38:46 [main] INFO  liquibase.command - Command execution complete
+2026-02-04 20:38:46 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-04 20:38:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-02-04 20:38:46 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-04 20:38:46 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 20:38:46 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 20:38:46 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 20:38:46 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:38:46 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-04 20:38:47 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 20:38:47 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-02-04 20:38:47 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-04 20:38:47 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-04 20:38:47 [main] INFO  d.a.j.JavaProgLessonsPro59Application - Started JavaProgLessonsPro59Application in 2.2 seconds (process running for 2.421)
+2026-02-04 20:38:47 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-04 20:38:47 [main] WARN  o.s.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-04 20:39:39 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-04 20:39:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-04 20:39:39 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-02-04 20:49:19 [SpringApplicationShutdownHook] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-04 20:49:19 [tomcat-shutdown] INFO  o.s.b.w.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-04 20:49:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 20:49:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 20:49:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
