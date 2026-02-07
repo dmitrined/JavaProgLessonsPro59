@@ -31,12 +31,35 @@ public class CarDocumentsOsService {
     @Value("${app.upload.car-docs-dir}")
     private String carDocsDir;
 
+    @Value("${app.upload.car-doc-max-size}")
+    private Long carDocMaxSize;
+
     public CarDocumentOs uploadCarDocument(Long carId, CarDocumentType doctype,
                                            MultipartFile file) {
 
         if (file == null || file.isEmpty()) {
             log.error("File is null or empty");
             throw new IllegalArgumentException("File is empty");
+        }
+
+        if(file.getSize() > carDocMaxSize){
+            log.error("File size is too big {}file:{}", file.getSize(), file.getOriginalFilename());
+            throw new IllegalArgumentException("File size is too big");
+        }
+
+        String contentType = file.getContentType();
+        if(contentType == null || contentType.isBlank()){
+            log.error("File content type is null or empty");
+            throw new IllegalArgumentException("File content type is empty");
+        }
+
+        boolean allowed = contentType.equals("application/pdf") ||
+                contentType.equals("image/jpeg") ||
+                contentType.equals("image/png");
+
+        if(!allowed){
+            log.error("File content type is not allowed");
+            throw new IllegalArgumentException("File content type is not allowed " + contentType);
         }
 
         Car car = carRepository.findById(carId)
