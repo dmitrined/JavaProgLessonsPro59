@@ -1,6 +1,3 @@
-multipart/form-data
-../../etc/passwd/file.bat
-
 Spring Boot: Загрузка файлов (File Upload)
 1) Как вообще “летит” файл по HTTP
 1.1 Почему файл обычно не отправляют как JSON
@@ -40,6 +37,17 @@ getBytes() — получить все байты в память (осторо�
 @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
 @RequestPart("file") MultipartFile file — достать файл из части multipart
 @RequestParam String docType — достать обычное поле (query parameter или form field)
+
+Пример контроллера:
+```java
+@PostMapping(value = "/{carId}/documents", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+public CarDocumentOs uploadDocument(@PathVariable Long carId,
+                                    @RequestParam CarDocumentType docType,
+                                    @RequestPart("file") MultipartFile file) {
+    return carDocumentsOsService.uploadCarDocument(carId, docType, file);
+}
+```
+
 4) Как тестировать загрузку файла в Postman
 4.1 Отправка файла
 Method: POST
@@ -113,6 +121,15 @@ PDF договоры на машину
 
 генерировать имя хранения самим (например UUID)
 строить пути через Path.resolve(...)
+
+Пример генерации имени:
+```java
+String originalFilename = file.getOriginalFilename();
+String storedFilename = UUID.randomUUID() + "_" + originalFilename.toLowerCase();
+Path targetPath = carDir.resolve(storedFilename);
+Files.copy(file.getInputStream(), targetPath, StandardCopyOption.REPLACE_EXISTING);
+```
+
 6.2 Ограничьте размер файла
 Если не ограничить — можно отправить гигабайты и “положить” сервер.
 
@@ -127,6 +144,17 @@ application/pdf
 image/jpeg
 image/png
 Это защищает от загрузки непредусмотренных типов.
+
+Пример проверки:
+```java
+String contentType = file.getContentType();
+boolean allowed = contentType.equals("application/pdf") ||
+                  contentType.equals("image/jpeg") ||
+                  contentType.equals("image/png");
+if(!allowed) {
+    throw new IllegalArgumentException("File content type is not allowed " + contentType);
+}
+```
 
 7) Что сохранять вместе с файлом (минимальный набор метаданных)
 При любом способе хранения полезно хранить:
@@ -146,6 +174,17 @@ owner / carId / clientEmail — привязка к бизнес-объекту
 находите путь к файлу
 читаете его как ресурс
 возвращаете Content-Disposition: attachment
+
+Пример:
+```java
+public ResponseEntity<Resource> downloadFile(Path path) {
+    Resource resource = new UrlResource(path.toUri());
+    return ResponseEntity.ok()
+            .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
+            .body(resource);
+}
+```
+
 8.2 Если файл хранится в БД
 Вы:
 

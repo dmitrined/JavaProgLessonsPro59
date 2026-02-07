@@ -1,0 +1,62 @@
+### Разбор задания: “Candidate Documents API (OS storage + metadata in DB)”
+
+#### 1. Бизнес-задача
+Реализовать функционал для HR-отдела автосалона, позволяющий кандидатам загружать свои документы (резюме, сертификаты и т.д.).
+- **Файлы:** хранятся в файловой системе (ОС) в структурированных папках.
+- **Метаданные:** хранятся в базе данных (БД) для быстрого поиска и управления.
+
+---
+
+#### 2. Структура проекта и созданные файлы
+
+##### 2.1. Модель данных (Entity & Enum)
+- `de.ait.javaproglessonspro.enums.CandidateDocType`:
+  Enum с типами документов: `CV`, `COVER_LETTER`, `CERTIFICATE`, `PORTFOLIO`, `RECOMMENDATION`.
+- `de.ait.javaproglessonspro.model.CandidateDocumentOs`:
+  JPA Entity для хранения метаданных в БД.
+  - Поля: `id`, `candidateEmail`, `docType`, `originalFilename`, `storedFilename`, `contentType`, `size`, `storagePath`, `createdAt`.
+
+##### 2.2. Репозиторий (Repository)
+- `de.ait.javaproglessonspro.repository.CandidateDocumentOsRepository`:
+  Интерфейс, расширяющий `JpaRepository`. Добавлены методы для поиска документов по email и удаления всех документов одного кандидата.
+
+##### 2.3. Сервисный слой (Service)
+- `de.ait.javaproglessonspro.service.CandidateDocumentOsService`:
+  Основная бизнес-логика:
+  - **Валидация:** Проверка email (наличие `@`), проверка файла (не пустой, размер до 5МБ, разрешенные типы: PDF, JPEG, PNG).
+  - **Хранение в ОС:** Создание папок по пути `./uploads/candidate-docs/{normalizedEmail}/{docType}/`. Email нормализуется (замена `@` на `_at_` и `.` на `_`).
+  - **Уникальность имен:** Имя файла на диске генерируется как `UUID + originalFilename`.
+  - **Ограничения:** Добавлена логика "не более 10 документов на одного кандидата".
+  - **Логирование:** Использование `log.warn` при нарушении правил валидации.
+
+##### 2.4. Контроллер (Controller)
+- `de.ait.javaproglessonspro.controllers.CandidateDocumentController`:
+  REST API с 5 эндпоинтами:
+  1. `POST /api/candidates/documents/os` — загрузка документа.
+  2. `GET /api/candidates/documents/os` — список документов кандидата (с фильтром по типу).
+  3. `GET /api/candidates/documents/os/{documentId}/download` — скачивание файла.
+  4. `DELETE /api/candidates/documents/os/{documentId}` — удаление одного документа.
+  5. `DELETE /api/candidates/documents/os?candidateEmail=...` — удаление всех документов кандидата.
+
+##### 2.5. Конфигурация и БД
+- `application.properties`: Настроен путь хранения `app.upload.candidate-docs-dir`.
+- `Liquibase`: Создан файл `011-create-candidate-documents-os-table.xml` для создания таблицы в БД.
+
+---
+
+#### 3. Тестирование
+Для проверки решения был создан интеграционный тест:
+- `de.ait.javaproglessonspro.controllers.CandidateDocumentOsIT`:
+  - Проверяет успешную загрузку и корректность записи в БД и наличия файла на диске.
+  - Проверяет полный цикл: Upload -> List -> Download -> Delete.
+  - Проверяет негативные кейсы (например, превышение лимита в 10 документов).
+
+---
+
+#### 4. Как это работает (алгоритм загрузки)
+1. Контроллер принимает `MultipartFile`, `email` и `docType`.
+2. Сервис проверяет файл на соответствие правилам (размер, тип).
+3. Если всё ок, сервис нормализует email и строит путь к папке.
+4. Генерируется уникальное имя файла и файл сохраняется на диск через `Files.copy`.
+5. Метаданные (включая путь к файлу) сохраняются в таблицу `candidate_documents_os`.
+6. Клиенту возвращается JSON с информацией о созданном документе.
